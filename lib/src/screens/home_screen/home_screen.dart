@@ -9,8 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'components/body.dart';
 import 'package:domus/src/screens/menu_page/menu_screen.dart';
-
 import 'components/dbody.dart';
+import 'components/kbody.dart';
 
 class HomeScreen extends StatelessWidget {
   static String routeName = '/home-screen';
@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                             color: Colors.amber,
                           ),
                           onPressed: () {
-                            // Navigator.of(context).pushNamed(EditProfile.routeName);
+                            Navigator.of(context).pushNamed(EditProfile.routeName);
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -124,13 +124,25 @@ class HomeScreen extends StatelessWidget {
                         Tab(
                           child: Text(
                             'Dining',
-                            style: Theme.of(context).textTheme.headlineMedium,
+                            style: Theme.of(context).textTheme.displaySmall,
                           ),
                         ),
                         Tab(
                           child: Text(
                             'Kitchen',
-                            style: Theme.of(context).textTheme.headlineMedium,
+                            style: Theme.of(context).textTheme.displaySmall,
+                          ),
+                        ),
+                        Tab(
+                          child: Text(
+                            'Room 1',
+                            style: Theme.of(context).textTheme.displaySmall,
+                          ),
+                        ),
+                        Tab(
+                          child: Text(
+                            'Room 2',
+                            style: Theme.of(context).textTheme.displaySmall,
                           ),
                         ),
                       ]),
@@ -146,7 +158,13 @@ class HomeScreen extends StatelessWidget {
                   DBody(
                     model: model,
                   ),
-                  const Center(
+                  KBody(
+                    model: model,
+                  ),
+                  Body(
+                    model: model,
+                  ),
+                  Center(
                     child: Text('under construction ma"am'),
                   ),
                 ],

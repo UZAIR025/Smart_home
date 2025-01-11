@@ -1,3 +1,4 @@
+import 'package:domus/src/screens/menu_page/components/notification_screen.dart';
 import 'package:domus/src/screens/set_event_screen/set_event_screen.dart';
 import 'package:domus/src/screens/edit_profile/edit_profile.dart';
 import 'package:domus/src/screens/login_screen/login_screen.dart';

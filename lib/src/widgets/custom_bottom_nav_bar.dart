@@ -20,12 +20,12 @@ class CustomBottomNavBar extends StatelessWidget {
       onTap: model.onItemTapped,
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          label: '',
+          label: 'Home',
           icon: Icon(Icons.home),
           backgroundColor: Colors.white,
         ),
         BottomNavigationBarItem(
-          label: '',
+          label: 'EnergySave',
           icon: Icon(Icons.auto_graph_rounded),
           backgroundColor: Colors.limeAccent,
         ),
@@ -42,22 +42,6 @@ class CustomBottomNavBar extends StatelessWidget {
       ],
     );
 
+
   }
 }
-// final items =  <Widget>[
-// Icon(Icons.home, size: 30),
-// Icon(Icons.list, size: 30),
-// Icon(Icons.list, size: 30),
-// Icon(Icons.list, size: 30),
-// Icon(Icons.compare_arrows, size: 30),];
-// return Scaffold(
-// bottomNavigationBar: CurvedNavigationBar(
-// backgroundColor: Colors.blueAccent,
-// items: items,
-// //index: index,
-// onTap: (index) {
-// //Handle button tap
-// },
-// ),
-// body: Container(color: Colors.blueAccent),
-// );

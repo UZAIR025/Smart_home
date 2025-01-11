@@ -4,6 +4,8 @@ import 'package:domus/src/screens/savings_screen/savings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:domus/config/size_config.dart';
 
+import 'notification_screen.dart';
+
 class MenuList extends StatelessWidget {
   const MenuList({Key? key}) : super(key: key);
 
@@ -51,7 +53,7 @@ class MenuList extends StatelessWidget {
         MenuListItems(
           iconPath: 'assets/icons/menu_icons/notifications.svg',
           itemName: 'Notification',
-          function: () {},
+          function: () {Navigator.of(context).pushNamed(NotificationScreen.routeName);},
         ),
         SizedBox(
           height: getProportionateScreenHeight(10),
